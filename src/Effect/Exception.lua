@@ -1,6 +1,6 @@
 return {
     showErrorImpl = function(err) return err end,
-    error = function(msg) return error(msg) end,
+    error = function(msg) return msg end,
     errorWithCause = function(msg)
         return function(cause) return msg .. "\nCaused by: " .. cause end
     end,
